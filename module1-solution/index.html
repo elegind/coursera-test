@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="myFirstApp">
+  <head>
+      <meta charset="utf-8">
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <script src="app.js"></script>
+      <title>My first angular app</title>
+  </head>
+  <body>
+      <div ng-controller="MyFirstController">
+          {{sayHello()}}
+          <input type="text" ng-model="name">
+      </div>
+  </body>
+</html>
