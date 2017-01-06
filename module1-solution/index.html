@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="myFirstApp">
+<html ng-app="LunchCheck">
   <head>
       <meta charset="utf-8">
       <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -7,9 +7,15 @@
       <title>My first angular app</title>
   </head>
   <body>
-      <div ng-controller="MyFirstController">
-          {{sayHello()}}
-          <input type="text" ng-model="name">
+	  <h1 align="center">MODULE 1 EXERCISE COURSERA</h1>
+      <div ng-controller="LunchCheckController">
+		  <div>
+			<input type="text" ng-model="list">
+			<button type="button" ng-click="checkIfTooMuch()">Check If Too Much</button> 
+			<p style="color:{{stateMessageColor}}">
+			{{stateMessage}}
+			</p> 
+		  </div>        
       </div>
   </body>
 </html>
