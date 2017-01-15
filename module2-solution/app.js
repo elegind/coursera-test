@@ -44,7 +44,7 @@
       return productListAlreadyBought;
     };
 
-    shoppingService.buyProduct(index){
+    shoppingService.buyProduct = function(index){
       productListAlreadyBought.push(productListToBuy[index]);
       productListToBuy.slice(index,1);
     };
